@@ -4,33 +4,35 @@
 <title>
 mi app
 </title>
+<link rel="stylesheet" type="text/css" href="app.css" media="screen" />
 </head>
 <body>
-<form>
+<form action="pais" method="get">
 <div> 
 <label>nombres</label>
-<input type="text" name="nombre" >
+<input type="text" name="nombre" required="required" placeholder="Escriba sud dos nombres" >
 </div>
 <div>
 	<label>apellidos</label>
-	<input type="text" name="apellidos" >
+	<input type="text" name="apellidos" required="required" placeholder="Escriba sus dos apellidos">
 </div>
 <div>
 	<label>edad</label>
-	<input type="number" name="fecha" size="5" >
+	<input type="date" name="fecha" required="required" size="10">
 </div>
 <div>
 	<label>sexo</label>
-<input type="radio" name="hm" value="h"> Hombre
-    <input type="radio" name="hm" value="m"> Mujer
+<input type="radio" name="hm" value="h" required="required"> Hombre
+    <input type="radio" name="hm" value="m" required="required"> Mujer
 </div>
 <div>
 	<label>domicilio</label>
-	<input type="text" name="dom" >
+	<input type="text" name="dom" required="required">
 </div>	
 <div>
 	<label>nacionalida</label>
-	 <select name="pais">
+	 <select name="pais" required="required"	>
+	 <option value="DE"></option>
  <option value="DE">Alemania</option>
  <option value="GT">Guatemala</option>
  <option value="GY">Guayana</option>
@@ -41,7 +43,17 @@ mi app
  <option value="HT">Haití</option>
  <option value="HN">Honduras</option>
  <option value="NI">Nicaragua</option>
+</select>
  </div>
+ <div>
+	<label>telefono</label>
+	<input type="tel" name="cell" required="required">
+</div>	
+
+ <div class="c">
+    <input class="b" type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+  </div>
 </form>
 </body>
 </html>
