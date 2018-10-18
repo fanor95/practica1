@@ -1,53 +1,50 @@
 
 <html>
 <head>
-<title>
-mi app
-</title>
+<title>registro</title>
 <link rel="stylesheet" type="text/css" href="app.css" media="screen" />
 </head>
 <body>
 <form action="pais" method="get">
 <div> 
 <label>nombres</label>
-<input type="text" name="nombre" required="required" placeholder="Escriba sud dos nombres" >
+<input  type="text" name="nombre" required="required" placeholder="Escriba sud dos nombres" >
 </div>
 <div>
 	<label>apellidos</label>
-	<input type="text" name="apellidos" required="required" placeholder="Escriba sus dos apellidos">
+	<input  type="text" name="apellidos" required="required" placeholder="Escriba sus dos apellidos">
 </div>
 <div>
 	<label>edad</label>
-	<input type="date" name="fecha" required="required" size="10">
+	<input class="f" type="date" name="fecha" required="required" size="10">
 </div>
 <div>
 	<label>sexo</label>
-<input type="radio" name="hm" value="h" required="required"> Hombre
+<input class="f" type="radio" name="hm" value="h" required="required"> Hombre
     <input type="radio" name="hm" value="m" required="required"> Mujer
 </div>
 <div>
 	<label>domicilio</label>
-	<input type="text" name="dom" required="required">
+	<input type="text" name="dom" required="required" placeholder="Escriba su domicilio">
 </div>	
-<div>
-	<label>nacionalida</label>
-	 <select name="pais" required="required"	>
-	 <option value="DE"></option>
- <option value="DE">Alemania</option>
- <option value="GT">Guatemala</option>
- <option value="GY">Guayana</option>
- <option value="GF">Guayana Francesa</option>
- <option value="GN">Guinea</option>
- <option value="GQ">Guinea Ecuatorial</option>
- <option value="GW">Guinea-Bissau</option>
- <option value="HT">Haití</option>
- <option value="HN">Honduras</option>
- <option value="NI">Nicaragua</option>
+<div >
+	<label>pais</label>
+	 <select  class="f" name="pais" required="required"	>
+	 <option value="v">nacionalidad</option>
+ <option value="A">Alemania</option>
+ <option value="G">Guatemala</option>
+ <option value="J">Japon</option>
+ <option value="M">Mexico</option>
+ <option value="S">Salvador</option>
+ <option value="US">Estados unidos</option>
+ <option value="R">Rusia</option>
+ <option value="H">Honduras</option>
+ <option value="N">Nicaragua</option>
 </select>
  </div>
  <div>
 	<label>telefono</label>
-	<input type="tel" name="cell" required="required">
+	<input type="tel" name="cell" required="required" placeholder="Escriba su # de telefono">
 </div>	
 
  <div class="c">
